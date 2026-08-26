@@ -65,6 +65,20 @@
     margin-bottom: 40px;
   }
 
+  .portrait {
+    display: block;
+    width: 100%;
+    max-width: 252px;
+    height: auto;
+    border-radius: 3px;
+    margin: 0 auto 32px;
+    filter: grayscale(100%) brightness(1.15);
+    transition: filter 0.4s ease;
+  }
+  .portrait:hover {
+    filter: grayscale(0%);
+  }
+
   .name-ja {
     font-size: 1.3rem;
     letter-spacing: 0.05em;
@@ -81,11 +95,6 @@
     font-size: 0.92rem;
     line-height: 1.9;
     margin: 0;
-  }
-  .degree {
-    margin-top: 20px;
-    color: var(--text-muted);
-    font-size: 0.85rem;
   }
 
   .keywords {
@@ -124,16 +133,18 @@
 </head>
 <body>
 <nav class="site-nav">
-  <a class="brand" href="/">NOGUCHI</a>
+  <a class="brand" href="/">FU NOGUCHI LAB.</a>
   <div class="nav-links">
     <span class="current">PROFILE</span>
-    <a href="https://yutanoguchi051.github.io/ExLibris/">ExLibris</a>
     <a href="https://yutanoguchi051.github.io/FU-NoguchiLab/">LAB</a>
+    <a href="https://yutanoguchi051.github.io/ExLibris/">ExLibris</a>
   </div>
 </nav>
 
 <main>
   <p class="kicker">PROFILE</p>
+
+  <img src="profile.jpg" alt="野口雄太" class="portrait">
 
   <p class="name-ja">野口 雄太</p>
   <p class="name-en">YUTA NOGUCHI</p>
@@ -144,19 +155,15 @@
     Faculty of Engineering, Department of Architecture,<br>
     Fukuoka University
   </p>
-  <p class="degree">博士（工学）</p>
+  <p class="degree">博士（工学） / Dr. Eng.</p>
 
-  <p class="keywords">建築計画、農村計画、災害復興、炭鉱集落</p>
+  <p class="keywords">建築計画・農村計画</p>
 
   <hr>
 
   <ul class="links">
     <li>
-      <a href="https://researchmap.jp/ynoguchi">researchmap: https://researchmap.jp/ynoguchi</a>
-    </li>
-    <li>
-      <a href="https://yutanoguchi051.github.io/ExLibris/">蔵書リスト（ExLibris）</a>
-      <span class="desc">重複購入の確認用、および関心分野の選書リストとして公開しています</span>
+      <a href="https://researchmap.jp/ynoguchi">https://researchmap.jp/ynoguchi</a>
     </li>
   </ul>
 </main>
